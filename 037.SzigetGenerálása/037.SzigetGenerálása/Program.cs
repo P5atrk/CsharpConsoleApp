@@ -53,16 +53,31 @@ namespace _037.SzigetGenerálása
             // 'kráter' lerakása a field közepén (random -1, 0, +1 'irányba')
             field[field.GetLength(0) / 2 + random.Next(0, 3) - 1, field.GetLength(1) / 2 + random.Next(0, 3) - 1].Depth = 200;
             DrawField();
-            for (int i = 0; i < field.Length; i++)
-            {
-                for (int j = -1; j <= 1; j++)
+             
+            for (int i = 0; i < field.GetLength(0); i++)
+            { // a szintezés
+                for (int j = 0; j < field.GetLength(1); j++)
                 {
                     for (int k = -1; k <= 1; k++)
                     {
-                        if ()
+                        for (int l = -1; l <= 1; l++)
+                        {
+                            if (i + k > 0 && j + l > 0 && i + k < field.GetLength(0) && j + l < field.GetLength(1)) // szélsőértékek
+                            {
+                                if (field[i + k, j + l].Depth == 200)
+                                {
+                                    if (random.Next(100) > 30)
+                                    {
+                                        field[i, j].Depth = 100;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
+
+            DrawField();
 
             Console.ReadKey();
         }
@@ -95,6 +110,8 @@ namespace _037.SzigetGenerálása
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine();
+            Console.ReadKey(true);
         }
     }
 
