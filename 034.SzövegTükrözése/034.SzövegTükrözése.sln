@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "034.SzövegTükrözése", "034.SzövegTükrözése\034.SzövegTükrözése.csproj", "{38F912DC-050D-4E73-A888-E3847D412559}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38F912DC-050D-4E73-A888-E3847D412559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F912DC-050D-4E73-A888-E3847D412559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F912DC-050D-4E73-A888-E3847D412559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F912DC-050D-4E73-A888-E3847D412559}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {556C60E6-66BA-4D12-8340-6E6E99BA3654}
+	EndGlobalSection
+EndGlobal
